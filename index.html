@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSE L01 — Space Heating & Energy Recovery · 空間供熱與熱能回收</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>🔥 BSE L01 — Space Heating & Energy Recovery Systems</h1>
+    <p>空間供熱、熱水/蒸汽管網、電熱安全控制與五大熱能回收系統 · Lecture 1 · BSE</p>
+    <p>25 條選擇題 + 5 條計算簡答題 · 12 幅 SCADA 工業級動態向量原理圖 · Bilingual 中英對照</p>
+  </header>
+
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-value" id="timer">90:00</div>
+      <div class="stat-label">Time Left / 剩餘時間</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value" id="answeredCount">0/25</div>
+      <div class="stat-label">Answered / 已答題數</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value" id="scoreDisplay">-</div>
+      <div class="stat-label">Score / 測驗得分</div>
+    </div>
+    <div style="width:100%;">
+      <div class="progress-container"><div class="progress-fill" id="progressBar"></div></div>
+    </div>
+  </div>
+
+  <div class="result-panel" id="resultPanel">
+    <div class="score-circle" id="scoreCircle"><div class="score-text" id="finalScore">0%</div></div>
+    <div class="result-msg" id="resultMsg">Done!</div>
+    <div class="review-section" id="reviewSection"></div>
+    <div style="margin-top:20px;">
+      <button class="btn btn-secondary" onclick="location.reload()">Restart / 重新開始</button>
+    </div>
+  </div>
+
+  <nav class="tab-nav" id="tabNav">
+    <button class="tab-btn active" onclick="showSection('notes')">📚 Notes 筆記 (含 SCADA 原理圖)</button>
+    <button class="tab-btn" onclick="showSection('part1')">📋 MC (25)</button>
+    <button class="tab-btn" onclick="showSection('part2')">✏️ Short Q (5)</button>
+  </nav>
+
+  <!-- NOTES TAB -->
+  <section id="notesSection" class="section active">
+    <div class="intro-card">
+      <h3>👋 歡迎來到第一講！ / Welcome to Lecture 1!</h3>
+      <p>本講主題為 <strong>空間供熱與熱能回收系統 (Space Heating & Energy Recovery Systems)</strong>，是建築環境控制與能源工程的基石。內容全面涵蓋<strong>直接燃燒 vs 間接集中供熱</strong>、<strong>暖風系統與熱水管網（低溫暖水、熱水、中溫與高溫熱水）</strong>、<strong>單管串聯（水溫遞減）vs 雙管同程（Reverse-Return 水力自平衡）</strong>、<strong>低壓蒸汽供熱（單雙管重力回流、乾回流與濕回流）</strong>、<strong>散熱設備（金屬輻射板、窗下散熱器、自然/強制對流器與地板嵌入式低溫板）</strong>、<strong>通風管道電熱元件八大強制安全聯鎖規範</strong>，以及<strong>五大工業級熱能回收系統（熱管換熱器、轉輪式全熱交換器、環形雙盤管、雙束冷凝器廢熱回收與高能效熱泵）</strong>。每節均配備高精度動態圖解！</p>
+    </div>
+
+    <div class="toc">
+      <h3>📑 Table of Contents / 課題目錄</h3>
+      <ol>
+        <li><a href="#t1">Direct vs Indirect Space Heating Methods / 直接局部供熱 vs 間接集中供熱</a></li>
+        <li><a href="#t2">Warm-Air Heating Systems & Basement Furnaces / 暖風供熱系統與地庫加熱風道佈置</a></li>
+        <li><a href="#t3">Hot-Water Heating Systems & Rapid Response / 熱水供熱系統循環與熱負荷快速響應優勢</a></li>
+        <li><a href="#t4">Hot Water Classification by Design Temperature / 熱水系統按水溫四大分級與管徑耐壓取捨</a></li>
+        <li><a href="#t5">Radiator Piping: Single-Pipe vs Two-Pipe Reverse-Return / 單管串聯遞減 vs 雙管同程水力自平衡管路</a></li>
+        <li><a href="#t6">Steam Heating Systems: Gravity Returns & District CHP / 低壓蒸汽供熱系統、乾濕回流與區域熱電聯產</a></li>
+        <li><a href="#t7">Heat Emitting Equipment: Panels, Radiators & Convectors / 散熱設備四大家族：輻射板、散熱器、對流器與嵌入板</a></li>
+        <li><a href="#t8">Electric Duct Heaters & 8 Mandatory Safety Interlocks / 通風管道電加熱器八大強制性安全控制規範</a></li>
+        <li><a href="#t9">Heat Pipe Heat Exchangers: Phase-Change & Tilt Angle / 熱管換熱器：毛細相變循環、重力傾角與顯熱局限</a></li>
+        <li><a href="#t10">Enthalpy Wheels: Total Energy Recovery & Purge Sector / 轉輪式全熱交換器：70%–90% 焓回收與防串氣吹洗</a></li>
+        <li><a href="#t11">Run-Around Coils & Double-Bundle Reclaim Condensers / 環形雙盤管液體循環與冷水機雙束冷凝器廢熱回收</a></li>
+        <li><a href="#t12">Heat Pumps, COP Equations & Cascade Heating Systems / 熱泵熱力循環、COP 性能系數與 48–82°C 串級供熱</a></li>
+      </ol>
+    </div>
+
+    <div id="notesContainer"></div>
+  </section>
+
+  <!-- MC TAB -->
+  <section id="part1Section" class="section">
+    <div class="intro-card">
+      <h3>📋 Multiple Choice Questions (25 題選擇題)</h3>
+      <p>題目嚴格覆蓋 Lecture 1 所有供熱熱力學參數、管路佈局、電熱安全法規距離、熱管/焓輪特性與熱泵 COP 計算。點選答案後點擊 <strong>Submit MC</strong> 查看成績及詳細中英題解。</p>
+    </div>
+    <div id="mcContainer"></div>
+    <div class="action-btns">
+      <button class="btn btn-success" onclick="submitMC()">Submit MC / 提交並查看成績與解釋</button>
+    </div>
+  </section>
+
+  <!-- SHORT Q TAB -->
+  <section id="part2Section" class="section">
+    <div class="intro-card">
+      <h3>✏️ Short Answer Questions (5 題結構化工程分析簡答題)</h3>
+      <p>包含單管 vs 雙管同程水力分析、熱管毛細相變與顯熱局限分析、通風電加熱器八大安全聯鎖法規、熱泵第一定律能量平衡計算，以及各類散熱設備工況對比。建議先在草稿紙上作答，再點擊按鈕查看 Model Answer 與評分要點。</p>
+    </div>
+    <div id="shortContainer"></div>
+    <div class="action-btns">
+      <button class="btn btn-primary" onclick="showAnswers()">Show All Answers / 顯示所有參考答案</button>
+    </div>
+  </section>
+</div>
+
+<button class="to-top" id="toTop" onclick="window.scrollTo({top:0, behavior:'auto'})" title="Back to top">↑</button>
+
+<script src="app.js"></script>
+</body>
+</html>
