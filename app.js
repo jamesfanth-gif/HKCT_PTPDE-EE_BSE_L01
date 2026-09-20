@@ -29,7 +29,6 @@ const notesData = [
         <rect x="25" y="45" width="300" height="135" fill="#1a252f" stroke="#e67e22" rx="4"/>
         <text x="175" y="65" text-anchor="middle" font-size="10" fill="#fff">Fuel burnt IN the room (燃料在室內燃燒)</text>
         <rect x="130" y="80" width="90" height="65" fill="#78281f" stroke="#e74c3c" rx="4"/>
-        <!-- Flame animation -->
         <path d="M 175 130 C 155 105, 195 105, 175 90 C 165 75, 185 75, 175 60" fill="none" stroke="#f1c40f" stroke-width="4"/>
         <text x="175" y="140" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">Fireplace / Stove</text>
         <path d="M 175 60 L 175 35 L 230 35" fill="none" stroke="#bdc3c7" stroke-width="3" stroke-dasharray="3 2"/>
@@ -317,7 +316,7 @@ const notesData = [
         <text x="82" y="80" text-anchor="middle" font-size="8.5" fill="#fff">Steel Panel</text>
         <text x="82" y="98" text-anchor="middle" font-size="8.5" fill="#f1c40f">100–150 °C</text>
         <rect x="10" y="135" width="145" height="155" fill="#111" stroke="#e74c3c" rx="3"/>
-        <text x="82" y="158" text-anchor="middle" font-size="9" fill="#f5b7b1">• <strong>60% Rad + 40% Conv</strong></text>
+        <text x="82" y="158" text-anchor="middle" font-size="9" fill="#f5b7b1">• 60% Rad + 40% Conv</text>
         <text x="82" y="180" text-anchor="middle" font-size="8.5" fill="#ecf0f1">• High factories</text>
         <text x="82" y="202" text-anchor="middle" font-size="8.5" fill="#ecf0f1">• Medium/high T water</text>
         <text x="82" y="224" text-anchor="middle" font-size="8.5" fill="#bdc3c7">• Ceiling plates allow lower surface temp</text>
@@ -329,7 +328,7 @@ const notesData = [
         <text x="87" y="80" text-anchor="middle" font-size="8.5" fill="#fff">Cast iron / Steel</text>
         <text x="87" y="98" text-anchor="middle" font-size="8.5" fill="#2ecc71">Under Window</text>
         <rect x="10" y="135" width="155" height="155" fill="#111" stroke="#f39c12" rx="3"/>
-        <text x="87" y="158" text-anchor="middle" font-size="9" fill="#f1c40f">• <strong>70% Conv + 30% Rad</strong></text>
+        <text x="87" y="158" text-anchor="middle" font-size="9" fill="#f1c40f">• 70% Conv + 30% Rad</text>
         <text x="87" y="180" text-anchor="middle" font-size="8.5" fill="#ecf0f1">• Placed under windows</text>
         <text x="87" y="202" text-anchor="middle" font-size="8.5" fill="#abebc6">• Cancels cold downdraft</text>
         <text x="87" y="224" text-anchor="middle" font-size="8" fill="#bdc3c7">• Reduces room temp gradient</text>
@@ -341,7 +340,7 @@ const notesData = [
         <text x="85" y="78" text-anchor="middle" font-size="8.5" fill="#fff">Finned Element</text>
         <text x="85" y="98" text-anchor="middle" font-size="8.5" fill="#f1c40f">Chimney Effect</text>
         <rect x="10" y="135" width="150" height="155" fill="#111" stroke="#16a085" rx="3"/>
-        <text x="85" y="158" text-anchor="middle" font-size="9" fill="#1abc9c">• <strong>Pure Convective</strong></text>
+        <text x="85" y="158" text-anchor="middle" font-size="9" fill="#1abc9c">• Pure Convective</text>
         <text x="85" y="180" text-anchor="middle" font-size="8.5" fill="#ecf0f1">• Rising column of air</text>
         <text x="85" y="202" text-anchor="middle" font-size="8.5" fill="#bdc3c7">• Air drawn in at base</text>
         <text x="85" y="224" text-anchor="middle" font-size="8" fill="#5dade2">• Forced type adds fan/filter</text>
@@ -353,7 +352,7 @@ const notesData = [
         <text x="87" y="78" text-anchor="middle" font-size="8.5" fill="#fff">Pipes in Floor</text>
         <text x="87" y="98" text-anchor="middle" font-size="8.5" fill="#f1c40f">27 °C – 50 °C</text>
         <rect x="10" y="135" width="155" height="155" fill="#111" stroke="#9b59b6" rx="3"/>
-        <text x="87" y="158" text-anchor="middle" font-size="9" fill="#bb86fc">• <strong>Large thermal mass</strong></text>
+        <text x="87" y="158" text-anchor="middle" font-size="9" fill="#bb86fc">• Large thermal mass</text>
         <text x="87" y="180" text-anchor="middle" font-size="8.5" fill="#ecf0f1">• Very uniform heating</text>
         <text x="87" y="202" text-anchor="middle" font-size="8.5" fill="#d7bde2">• Safe surface temp</text>
         <text x="87" y="224" text-anchor="middle" font-size="8" fill="#bdc3c7">• Emits heat long after off</text>
@@ -395,14 +394,14 @@ const notesData = [
         <text x="505" y="88" font-size="8" fill="#00d2d3">Sail switch</text>
         <!-- Summary Matrix of 8 Rules -->
         <rect x="40" y="135" width="640" height="155" fill="#111" stroke="#1abc9c" rx="4"/>
-        <text x="50" y="156" font-size="9.5" fill="#fff">1. <strong>1000 mm Clearance:</strong> No internal acoustic/thermal duct insulation within 1000 mm of heater.</text>
-        <text x="50" y="174" font-size="9.5" fill="#fff">2. <strong>Sequence Interlock:</strong> Heater CANNOT be energized before the fan motor starts.</text>
-        <text x="50" y="192" font-size="9.5" fill="#f1c40f">3. <strong>3-Minute Fan Delay:</strong> On fan shut-off, heater cuts instantly while fan runs ≥ 3 mins to clear heat.</text>
-        <text x="50" y="210" font-size="9.5" fill="#fff">4. <strong>Emergency Stop Button:</strong> Mushroom head with manual reset overrides timer for instant stop.</text>
-        <text x="50" y="228" font-size="9.5" fill="#fff">5. <strong>Airflow Failure:</strong> Fail-safe sail switch / differential pressure switch cuts power on zero flow.</text>
-        <text x="50" y="246" font-size="9.5" fill="#fff">6. <strong>Overheat Stat:</strong> Located ≤ 600 mm, trips within 90 s if duct mean temp exceeds 50 °C ± 10%.</text>
-        <text x="50" y="264" font-size="9.5" fill="#ecf0f1">7. <strong>Fail-Safe:</strong> Switches de-energize elements on loss of control power.</text>
-        <text x="50" y="280" font-size="9" fill="#2ecc71">8. <strong>≤ 2 kW Relaxation:</strong> Small FCUs require only sequence interlock &amp; overheat stat.</text>
+        <text x="50" y="156" font-size="9.5" fill="#fff">1. 1000 mm Clearance: No internal acoustic/thermal duct insulation within 1000 mm of heater.</text>
+        <text x="50" y="174" font-size="9.5" fill="#fff">2. Sequence Interlock: Heater CANNOT be energized before the fan motor starts.</text>
+        <text x="50" y="192" font-size="9.5" fill="#f1c40f">3. 3-Minute Fan Delay: On fan shut-off, heater cuts instantly while fan runs ≥ 3 mins to clear heat.</text>
+        <text x="50" y="210" font-size="9.5" fill="#fff">4. Emergency Stop Button: Mushroom head with manual reset overrides timer for instant stop.</text>
+        <text x="50" y="228" font-size="9.5" fill="#fff">5. Airflow Failure: Fail-safe sail switch / differential pressure switch cuts power on zero flow.</text>
+        <text x="50" y="246" font-size="9.5" fill="#fff">6. Overheat Stat: Located ≤ 600 mm, trips within 90 s if duct mean temp exceeds 50 °C ± 10%.</text>
+        <text x="50" y="264" font-size="9.5" fill="#ecf0f1">7. Fail-Safe: Switches de-energize elements on loss of control power.</text>
+        <text x="50" y="280" font-size="9" fill="#2ecc71">8. ≤ 2 kW Relaxation: Small FCUs require only sequence interlock &amp; overheat stat.</text>
       </g>
     </svg>`,
     diagramCaption: 'Fig 8: Mechanical ventilation electric heater mandatory safety interlocks: 1 m uninsulated zone, 3-min fan rundown timer, and fail-safe airflow/overheat cut-offs',
