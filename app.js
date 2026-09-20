@@ -15,7 +15,7 @@ const lessonLabels = {
 };
 
 // =======================================================
-// 12 FULLY DEBUGGED SCADA ANIMATED SCHEMATICS (L01)
+// 12 FULLY DEBUGGED PURE-SVG SCHEMATICS (ZERO HTML TAGS)
 // =======================================================
 const notesData = [
   {
@@ -27,15 +27,15 @@ const notesData = [
         <rect x="0" y="25" width="350" height="275" fill="#243342" stroke="#e67e22" stroke-width="2" rx="8"/>
         <text x="175" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#f39c12">DIRECT (Local) Heating (直接局部供熱)</text>
         <rect x="25" y="45" width="300" height="135" fill="#1a252f" stroke="#e67e22" rx="4"/>
-        <text x="175" y="65" text-anchor="middle" font-size="10" fill="#fff">Fuel burnt IN the room (燃料在室內燃燒)</text>
+        <text x="175" y="65" text-anchor="middle" font-size="10" fill="#ffffff">Fuel burnt IN the room (燃料在室內燃燒)</text>
         <rect x="130" y="80" width="90" height="65" fill="#78281f" stroke="#e74c3c" rx="4"/>
         <path d="M 175 130 C 155 105, 195 105, 175 90 C 165 75, 185 75, 175 60" fill="none" stroke="#f1c40f" stroke-width="4"/>
-        <text x="175" y="140" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">Fireplace / Stove</text>
+        <text x="175" y="140" text-anchor="middle" font-size="8" fill="#ffffff" font-weight="bold">Fireplace / Stove</text>
         <path d="M 175 60 L 175 35 L 230 35" fill="none" stroke="#bdc3c7" stroke-width="3" stroke-dasharray="3 2"/>
         <text x="270" y="38" font-size="8.5" fill="#bdc3c7">Flue gas to room</text>
-        <rect x="15" y="195" width="320" height="95" fill="#111" stroke="#e67e22" rx="4"/>
+        <rect x="15" y="195" width="320" height="95" fill="#111111" stroke="#e67e22" rx="4"/>
         <text x="175" y="215" text-anchor="middle" font-size="10" fill="#f39c12" font-weight="bold">Characteristics &amp; Hazards:</text>
-        <text x="25" y="235" font-size="9" fill="#fff">• Open fires, closed stoves, gas convectors</text>
+        <text x="25" y="235" font-size="9" fill="#ffffff">• Open fires, closed stoves, gas convectors</text>
         <text x="25" y="253" font-size="9" fill="#ecf0f1">• Instant heat, but high combustion risk (CO, NOx, soot)</text>
         <text x="25" y="271" font-size="9" fill="#ff7675">• Lack of centralized zonal thermal regulation</text>
       </g>
@@ -45,19 +45,19 @@ const notesData = [
         <text x="175" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#1abc9c">INDIRECT (Central) Heating (間接集中供熱)</text>
         <g transform="translate(25, 45)">
           <rect x="0" y="20" width="100" height="85" fill="#78281f" stroke="#c0392b" rx="4"/>
-          <text x="50" y="55" text-anchor="middle" font-size="9.5" fill="#fff" font-weight="bold">Remote</text>
-          <text x="50" y="72" text-anchor="middle" font-size="9.5" fill="#fff" font-weight="bold">Boiler Plant</text>
+          <text x="50" y="55" text-anchor="middle" font-size="9.5" fill="#ffffff" font-weight="bold">Remote</text>
+          <text x="50" y="72" text-anchor="middle" font-size="9.5" fill="#ffffff" font-weight="bold">Boiler Plant</text>
           <path d="M 100 45 L 200 45" stroke="#ff7675" stroke-width="4" class="flow-hot-water"/>
           <text x="150" y="38" text-anchor="middle" font-size="8.5" fill="#ff7675" font-weight="bold">Supply Pipe</text>
           <path d="M 200 85 L 100 85" stroke="#00d2d3" stroke-width="4" class="flow-return-water"/>
           <text x="150" y="100" text-anchor="middle" font-size="8.5" fill="#00d2d3" font-weight="bold">Return Pipe</text>
           <rect x="200" y="25" width="90" height="75" fill="#1a252f" stroke="#16a085" rx="3"/>
           <text x="245" y="60" text-anchor="middle" font-size="9.5" fill="#1abc9c" font-weight="bold">Room</text>
-          <text x="245" y="76" text-anchor="middle" font-size="9" fill="#fff">Radiator</text>
+          <text x="245" y="76" text-anchor="middle" font-size="9" fill="#ffffff">Radiator</text>
         </g>
-        <rect x="15" y="195" width="320" height="95" fill="#111" stroke="#16a085" rx="4"/>
+        <rect x="15" y="195" width="320" height="95" fill="#111111" stroke="#16a085" rx="4"/>
         <text x="175" y="215" text-anchor="middle" font-size="10" fill="#1abc9c" font-weight="bold">Centralized Safety &amp; Engineering Benefits:</text>
-        <text x="25" y="235" font-size="9" fill="#fff">• Media: Warm air, hot water, or steam</text>
+        <text x="25" y="235" font-size="9" fill="#ffffff">• Media: Warm air, hot water, or steam</text>
         <text x="25" y="253" font-size="9" fill="#ecf0f1">• Flue gas handled safely at central chimney</text>
         <text x="25" y="271" font-size="9" fill="#2ecc71">• Precise zoning and automated thermal control</text>
       </g>
@@ -66,8 +66,8 @@ const notesData = [
     sections: [
       {
         title: 'Two Fundamental Heating Categories / 兩大空間供熱方式',
-        zh: '<p>空間供熱依燃料燃燒位置分為兩大類[cite: 13]：</p><ul><li><strong>直接 (Direct / Local) 供熱</strong>：燃料直接在需加熱的房間內部燃燒（如明火 open fire、密封爐 closed stove、燃氣自然對流器）[cite: 13]。熱量即時產生，但燃燒產物（CO、NOx、煙氣）直接滯留室內，安全風險高且難以多區自動控制[cite: 13]；</li><li><strong>間接 (Indirect / Central) 供熱</strong>：燃料在遠離起居區的機房（如地庫鍋爐房）燃燒，熱能透過「傳熱介質」輸送至末端[cite: 13]。常見介質為<strong>暖風 (warm-air)、熱水 (hot-water) 與蒸汽 (steam)</strong>[cite: 13]。排煙集中處理，室內空氣清潔安全[cite: 13]。</li></ul>',
-        en: '<p>Space heating is categorized into two main streams[cite: 13]:</p><ul><li><strong>Direct (Local) heating</strong>: Fuel is consumed directly in the space (open fire, stove, gas convector)[cite: 13]. Quick heat, but flue gases enter the room and zoning is poor[cite: 13];</li><li><strong>Indirect (Central) heating</strong>: Fuel is burnt remotely in a boiler/furnace room; thermal energy is piped via a medium (<strong>warm air, hot water, or steam</strong>) to room terminals[cite: 13]. Flue gases are safely discharged centrally[cite: 13].</li></ul>'
+        zh: '<p>空間供熱依燃料燃燒位置分為兩大類：</p><ul><li><strong>直接 (Direct / Local) 供熱</strong>：燃料直接在需加熱的房間內部燃燒（如明火 open fire、密封爐 closed stove、燃氣自然對流器）。熱量即時產生，但燃燒產物（CO、NOx、煙氣）直接滯留室內，安全風險高且難以多區自動控制；</li><li><strong>間接 (Indirect / Central) 供熱</strong>：燃料在遠離起居區的機房（如地庫鍋爐房）燃燒，熱能透過「傳熱介質」輸送至末端。常見介質為<strong>暖風 (warm-air)、熱水 (hot-water) 與蒸汽 (steam)</strong>。排煙集中處理，室內空氣清潔安全。</li></ul>',
+        en: '<p>Space heating is categorized into two main streams:</p><ul><li><strong>Direct (Local) heating</strong>: Fuel is consumed directly in the space (open fire, stove, gas convector). Quick heat, but flue gases enter the room and zoning is poor;</li><li><strong>Indirect (Central) heating</strong>: Fuel is burnt remotely in a boiler/furnace room; thermal energy is piped via a medium (<strong>warm air, hot water, or steam</strong>) to room terminals. Flue gases are safely discharged centrally.</li></ul>'
       }
     ]
   },
@@ -80,47 +80,43 @@ const notesData = [
         <text x="360" y="16" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1abc9c">Warm-Air Heating System (地庫暖風爐與多房間風道佈置)</text>
         <line x1="40" y1="180" x2="680" y2="180" stroke="#7f8c8d" stroke-width="2" stroke-dasharray="6 3"/>
         <text x="60" y="172" font-size="9" fill="#bdc3c7">Ground Level (地面)</text>
-        <!-- Basement Furnace -->
         <rect x="60" y="195" width="160" height="95" fill="#1a252f" stroke="#e67e22" stroke-width="2" rx="4"/>
         <text x="140" y="222" text-anchor="middle" font-size="10.5" fill="#f39c12" font-weight="bold">Basement Furnace</text>
         <circle cx="185" cy="250" r="16" fill="#34495e"/>
-        <text x="185" y="254" text-anchor="middle" font-size="8" fill="#fff">Blower</text>
-        <!-- Main Supply Trunk Duct -->
+        <text x="185" y="254" text-anchor="middle" font-size="8" fill="#ffffff">Blower</text>
         <path d="M 220 250 L 650 250" stroke="#f1c40f" stroke-width="8" class="flow-air-stream"/>
         <text x="435" y="270" text-anchor="middle" font-size="9.5" fill="#f1c40f">Under-floor / In-wall Supply Duct (主風道)</text>
-        <!-- Risers to Rooms -->
         <path d="M 280 250 L 280 130" stroke="#f1c40f" stroke-width="5" class="flow-air-stream"/>
         <rect x="245" y="75" width="70" height="55" fill="#1b4f72" stroke="#3498db" rx="3"/>
-        <text x="280" y="105" text-anchor="middle" font-size="8.5" fill="#fff">Room A</text>
+        <text x="280" y="105" text-anchor="middle" font-size="8.5" fill="#ffffff">Room A</text>
         
         <path d="M 430 250 L 430 130" stroke="#f1c40f" stroke-width="5" class="flow-air-stream"/>
         <rect x="395" y="75" width="70" height="55" fill="#1b4f72" stroke="#3498db" rx="3"/>
-        <text x="430" y="105" text-anchor="middle" font-size="8.5" fill="#fff">Room B</text>
+        <text x="430" y="105" text-anchor="middle" font-size="8.5" fill="#ffffff">Room B</text>
 
         <path d="M 580 250 L 580 130" stroke="#f1c40f" stroke-width="5" class="flow-air-stream"/>
         <rect x="545" y="75" width="70" height="55" fill="#1b4f72" stroke="#3498db" rx="3"/>
-        <text x="580" y="105" text-anchor="middle" font-size="8.5" fill="#fff">Room C</text>
+        <text x="580" y="105" text-anchor="middle" font-size="8.5" fill="#ffffff">Room C</text>
         
-        <!-- Legend Box -->
-        <rect x="40" y="45" width="190" height="105" fill="#111" stroke="#f39c12" rx="4"/>
+        <rect x="40" y="45" width="190" height="105" fill="#111111" stroke="#f39c12" rx="4"/>
         <text x="135" y="68" text-anchor="middle" font-size="10" fill="#f39c12" font-weight="bold">Engineering Constraints:</text>
-        <text x="15" y="90" font-size="8.5" fill="#fff">• Simple, direct air warming</text>
+        <text x="15" y="90" font-size="8.5" fill="#ffffff">• Simple, direct air warming</text>
         <text x="15" y="108" font-size="8.5" fill="#ecf0f1">• Flow: gravity or fan driven</text>
-        <text x="15" y="126" font-size="8.5" fill="#ff7675">• <strong>Bulky duct sizes</strong></text>
-        <text x="15" y="142" font-size="8.5" fill="#f1c40f">• <strong>1-2 family houses ONLY</strong></text>
+        <text x="15" y="126" font-size="8.5" fill="#ff7675">• Bulky duct sizes</text>
+        <text x="15" y="142" font-size="8.5" fill="#f1c40f">• 1-2 family houses ONLY</text>
       </g>
     </svg>`,
     diagramCaption: 'Fig 2: Warm-air heating layout: Basement furnace delivering heated air through under-floor ducts to rooms; restricted to small 1–2 family dwellings',
     sections: [
       {
         title: 'Warm-Air System Architecture / 暖風系統運作原理',
-        zh: '<p><strong>暖風系統 (Warm-air system)</strong> 在地庫暖風爐房 (furnace room) 將空氣加熱，利用地下或牆內風道輸送至各房間[cite: 13]。氣流可由<strong>重力熱壓 (gravity)</strong> 或<strong>送風機 (fan)</strong> 驅動[cite: 13]。</p>',
-        en: '<p>A <strong>warm-air system</strong> uses a furnace (usually in the basement) to heat air, distributing it through ducts via gravity or fan power[cite: 13].</p>'
+        zh: '<p><strong>暖風系統 (Warm-air system)</strong> 在地庫暖風爐房 (furnace room) 將空氣加熱，利用地下或牆內風道輸送至各房間。氣流可由<strong>重力熱壓 (gravity)</strong> 或<strong>送風機 (fan)</strong> 驅動。</p>',
+        en: '<p>A <strong>warm-air system</strong> uses a furnace (usually in the basement) to heat air, distributing it through ducts via gravity or fan power.</p>'
       },
       {
         title: 'Pros, Cons & Application Limits / 優缺點與適用範圍',
-        zh: '<div class="key-point"><strong>嚴格建築限制（Slide 4）：</strong><br>• <strong>優點</strong>：簡單、直接[cite: 13]；<br>• <strong>缺點</strong>：空氣容積熱容小，<strong>風管體積巨大 (bulky ducts)</strong>，佔用樓層淨高；傳熱距離短[cite: 13]；<br>• <strong>適用範圍</strong>：<strong>僅用於一戶或兩戶的小型低層住宅 (one- or two-family houses only)</strong>[cite: 13]。</div>',
-        en: '<div class="key-point"><strong>Key Limits (Slide 4):</strong><br>• <strong>Pros</strong>: Simple and direct[cite: 13];<br>• <strong>Cons</strong>: Bulky ducts and short heat transport distance[cite: 13];<br>• <strong>Application</strong>: Used <strong>only in small buildings such as one- or two-family houses</strong>[cite: 13].</div>'
+        zh: '<div class="key-point"><strong>嚴格建築限制：</strong><br>• <strong>優點</strong>：簡單、直接；<br>• <strong>缺點</strong>：空氣容積熱容小，<strong>風管體積巨大 (bulky ducts)</strong>，佔用樓層淨高；傳熱距離短；<br>• <strong>適用範圍</strong>：<strong>僅用於一戶或兩戶的小型低層住宅 (one- or two-family houses only)</strong>。</div>',
+        en: '<div class="key-point"><strong>Key Limits:</strong><br>• <strong>Pros</strong>: Simple and direct;<br>• <strong>Cons</strong>: Bulky ducts and short heat transport distance;<br>• <strong>Application</strong>: Used <strong>only in small buildings such as one- or two-family houses</strong>.</div>'
       }
     ]
   },
@@ -131,35 +127,30 @@ const notesData = [
       <g class="scada-unit" transform="translate(20, 20)">
         <rect x="0" y="25" width="720" height="280" fill="#243342" stroke="#34495e" stroke-width="2" rx="8"/>
         <text x="360" y="16" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1abc9c">Hot-Water Hydronic System Layout (熱水循環管網與散熱器配置)</text>
-        <!-- Boiler -->
         <rect x="50" y="75" width="110" height="125" fill="#78281f" stroke="#c0392b" stroke-width="2" rx="4"/>
-        <text x="105" y="125" text-anchor="middle" font-size="11.5" fill="#fff" font-weight="bold">BOILER</text>
+        <text x="105" y="125" text-anchor="middle" font-size="11.5" fill="#ffffff" font-weight="bold">BOILER</text>
         <text x="105" y="145" text-anchor="middle" font-size="9.5" fill="#f5b7b1">鍋爐</text>
-        <!-- Pump -->
         <circle cx="200" cy="180" r="16" fill="#16a085"/>
-        <text x="200" y="184" text-anchor="middle" font-size="9" fill="#fff" font-weight="bold">P</text>
+        <text x="200" y="184" text-anchor="middle" font-size="9" fill="#ffffff" font-weight="bold">P</text>
         <text x="200" y="210" text-anchor="middle" font-size="8.5" fill="#1abc9c">Pump</text>
-        <!-- Supply Pipe (Top) -->
         <path d="M 160 95 L 660 95" stroke="#ff7675" stroke-width="5" class="flow-hot-water"/>
         <text x="380" y="85" text-anchor="middle" font-size="10" fill="#ff7675" font-weight="bold">Supply Pipe (Hot: 70–90 °C)</text>
-        <!-- Return Pipe (Bottom) -->
         <path d="M 660 180 L 216 180" stroke="#00d2d3" stroke-width="5" class="flow-return-water"/>
         <text x="380" y="198" text-anchor="middle" font-size="10" fill="#00d2d3" font-weight="bold">Return Pipe (Cooled)</text>
-        <!-- Radiators -->
         <g transform="translate(260, 105)">
           <rect x="0" y="0" width="60" height="65" fill="#1a252f" stroke="#ff7675" rx="3"/>
-          <text x="30" y="38" text-anchor="middle" font-size="9" fill="#fff">Rad 1</text>
+          <text x="30" y="38" text-anchor="middle" font-size="9" fill="#ffffff">Rad 1</text>
         </g>
         <g transform="translate(410, 105)">
           <rect x="0" y="0" width="60" height="65" fill="#1a252f" stroke="#ff7675" rx="3"/>
-          <text x="30" y="38" text-anchor="middle" font-size="9" fill="#fff">Rad 2</text>
+          <text x="30" y="38" text-anchor="middle" font-size="9" fill="#ffffff">Rad 2</text>
         </g>
         <g transform="translate(560, 105)">
           <rect x="0" y="0" width="60" height="65" fill="#1a252f" stroke="#ff7675" rx="3"/>
-          <text x="30" y="38" text-anchor="middle" font-size="9" fill="#fff">Rad 3</text>
+          <text x="30" y="38" text-anchor="middle" font-size="9" fill="#ffffff">Rad 3</text>
         </g>
-        <rect x="40" y="225" width="640" height="65" fill="#111" stroke="#1abc9c" rx="4"/>
-        <text x="360" y="248" text-anchor="middle" font-size="10.5" fill="#1abc9c" font-weight="bold">Three Major Advantages over Warm-Air Systems (Slide 5):</text>
+        <rect x="40" y="225" width="640" height="65" fill="#111111" stroke="#1abc9c" rx="4"/>
+        <text x="360" y="248" text-anchor="middle" font-size="10.5" fill="#1abc9c" font-weight="bold">Three Major Advantages over Warm-Air Systems:</text>
         <text x="360" y="268" text-anchor="middle" font-size="9.5" fill="#ecf0f1">1. Water pipes occupy smaller space than ducts | 2. Fast &amp; uniform response to load changes | 3. Output easily matched to load (overheating minimized).</text>
       </g>
     </svg>`,
@@ -167,8 +158,8 @@ const notesData = [
     sections: [
       {
         title: 'Hot-Water System Advantages / 熱水系統運作與三大優點',
-        zh: '<p>鍋爐將水加熱後，經密閉水管送到房間終端設備散熱[cite: 13]。</p><div class="key-point"><strong>三大核心優點（Slide 5）：</strong><br>1. <strong>水管比風管佔用更少空間 (Pipes occupy smaller space than ducts)</strong>[cite: 13]；<br>2. <strong>對熱負載變化反應迅速且均勻 (Responds quickly and uniformly)</strong>[cite: 13]；<br>3. <strong>易於根據實際熱需求調節出力，避免過熱浪費 (Overheating minimised)</strong>[cite: 13]。</div>',
-        en: '<p>Boiler heats water, which is pumped through pipes to space terminal units[cite: 13].</p><div class="key-point"><strong>Three Major Advantages (Slide 5):</strong><br>1. Pipes occupy far <strong>less space than ducts</strong>[cite: 13];<br>2. Responds <strong>quickly and uniformly</strong> to load changes[cite: 13];<br>3. Economical to <strong>match output to load</strong>, minimising overheating[cite: 13].</div>'
+        zh: '<p>鍋爐將水加熱後，經密閉水管送到房間終端設備散熱。</p><div class="key-point"><strong>三大核心優點：</strong><br>1. <strong>水管比風管佔用更少空間 (Pipes occupy smaller space than ducts)</strong>；<br>2. <strong>對熱負載變化反應迅速且均勻 (Responds quickly and uniformly)</strong>；<br>3. <strong>易於根據實際熱需求調節出力，避免過熱浪費 (Overheating minimised)</strong>。</div>',
+        en: '<p>Boiler heats water, which is pumped through pipes to space terminal units.</p><div class="key-point"><strong>Three Major Advantages:</strong><br>1. Pipes occupy far <strong>less space than ducts</strong>;<br>2. Responds <strong>quickly and uniformly</strong> to load changes;<br>3. Economical to <strong>match output to load</strong>, minimising overheating.</div>'
       }
     ]
   },
@@ -181,23 +172,23 @@ const notesData = [
         <text x="360" y="16" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1abc9c">System Classification by Design Temperature (熱水溫度四個分級)</text>
         <g transform="translate(40, 45)">
           <rect x="0" y="0" width="640" height="34" fill="#f39c12" opacity="0.6"/>
-          <text x="15" y="22" font-size="10.5" fill="#fff" font-weight="bold">(a) Low Temperature Warm Water: 40 °C – 70 °C</text>
-          <text x="625" y="22" font-size="9.5" fill="#fff" text-anchor="end">Floor panels / Heat pumps</text>
+          <text x="15" y="22" font-size="10.5" fill="#ffffff" font-weight="bold">(a) Low Temperature Warm Water: 40 °C – 70 °C</text>
+          <text x="625" y="22" font-size="9.5" fill="#ffffff" text-anchor="end">Floor panels / Heat pumps</text>
           
           <rect x="0" y="44" width="640" height="34" fill="#e67e22" opacity="0.8"/>
-          <text x="15" y="66" font-size="10.5" fill="#fff" font-weight="bold">(b) Low Temperature Hot Water (LTHW): 70 °C – 100 °C</text>
-          <text x="625" y="66" font-size="9.5" fill="#fff" text-anchor="end">Standard commercial radiators</text>
+          <text x="15" y="66" font-size="10.5" fill="#ffffff" font-weight="bold">(b) Low Temperature Hot Water (LTHW): 70 °C – 100 °C</text>
+          <text x="625" y="66" font-size="9.5" fill="#ffffff" text-anchor="end">Standard commercial radiators</text>
 
           <rect x="0" y="88" width="640" height="34" fill="#c0392b" opacity="0.85"/>
-          <text x="15" y="110" font-size="10.5" fill="#fff" font-weight="bold">(c) Medium Temperature Hot Water (MTHW): 110 °C – 130 °C</text>
-          <text x="625" y="110" font-size="9.5" fill="#fff" text-anchor="end">District heating / Industrial</text>
+          <text x="15" y="110" font-size="10.5" fill="#ffffff" font-weight="bold">(c) Medium Temperature Hot Water (MTHW): 110 °C – 130 °C</text>
+          <text x="625" y="110" font-size="9.5" fill="#ffffff" text-anchor="end">District heating / Industrial</text>
 
           <rect x="0" y="132" width="640" height="34" fill="#8e44ad" opacity="0.9"/>
-          <text x="15" y="154" font-size="10.5" fill="#fff" font-weight="bold">(d) High Temperature Hot Water (HTHW): 140 °C – 180 °C</text>
-          <text x="625" y="154" font-size="9.5" fill="#fff" text-anchor="end">Long distance multi-building campus</text>
+          <text x="15" y="154" font-size="10.5" fill="#ffffff" font-weight="bold">(d) High Temperature Hot Water (HTHW): 140 °C – 180 °C</text>
+          <text x="625" y="154" font-size="9.5" fill="#ffffff" text-anchor="end">Long distance multi-building campus</text>
         </g>
-        <rect x="40" y="225" width="640" height="65" fill="#111" stroke="#f1c40f" rx="4"/>
-        <text x="360" y="248" text-anchor="middle" font-size="10.5" fill="#f1c40f" font-weight="bold">Engineering Trade-off (Slide 6): Higher T ➔ Stores more heat per kg ➔ Smaller pipe diameter!</text>
+        <rect x="40" y="225" width="640" height="65" fill="#111111" stroke="#f1c40f" rx="4"/>
+        <text x="360" y="248" text-anchor="middle" font-size="10.5" fill="#f1c40f" font-weight="bold">Engineering Trade-off: Higher T ➔ Stores more heat per kg ➔ Smaller pipe diameter!</text>
         <text x="360" y="268" text-anchor="middle" font-size="9.5" fill="#ecf0f1">Trade-off Penalty: Heavier thick-walled pipes and higher-pressure fittings are required to resist elevated working pressure.</text>
       </g>
     </svg>`,
@@ -205,8 +196,8 @@ const notesData = [
     sections: [
       {
         title: 'Four Temperature Bands / 四個溫度分級與工程取捨',
-        zh: '<p>按設計溫度分為四類[cite: 13]：</p><div class="formula-block">(a) 低溫暖水 (Low temp warm water):   40 – 70  °C\n(b) 低溫熱水 (Low temp hot water):    70 – 100 °C\n(c) 中溫熱水 (Medium temp hot water): 110 – 130 °C\n(d) 高溫熱水 (High temp hot water):   140 – 180 °C</div><div class="key-point"><strong>工程取捨（Slide 6）：</strong> 水溫越高，每千克水蓄熱量越大，<strong>可用更細管徑 (smaller pipe sizes)</strong>；但水壓隨溫度升高而倍增，<strong>必須採用更厚重的管材 (heavier pipes)</strong> 來承受高工作壓力，多用於多棟建築長途輸送[cite: 13]。</div>',
-        en: '<p>Water systems are grouped into four temperature bands[cite: 13]:</p><div class="formula-block">(a) Low temp warm water:      40 – 70  °C\n(b) Low temp hot water:       70 – 100 °C\n(c) Medium temp hot water:   110 – 130 °C\n(d) High temp hot water:     140 – 180 °C</div><div class="key-point"><strong>Trade-off (Slide 6):</strong> Higher temperatures allow water to store more heat per kg, enabling <strong>smaller pipe diameters</strong>, but require <strong>heavier pipes</strong> to handle elevated pressure[cite: 13].</div>'
+        zh: '<p>按設計溫度分為四類：</p><div class="formula-block">(a) 低溫暖水 (Low temp warm water):   40 – 70  °C\n(b) 低溫熱水 (Low temp hot water):    70 – 100 °C\n(c) 中溫熱水 (Medium temp hot water): 110 – 130 °C\n(d) 高溫熱水 (High temp hot water):   140 – 180 °C</div><div class="key-point"><strong>工程取捨：</strong> 水溫越高，每千克水蓄熱量越大，<strong>可用更細管徑 (smaller pipe sizes)</strong>；但水壓隨溫度升高而倍增，<strong>必須採用更厚重的管材 (heavier pipes)</strong> 來承受高工作壓力，多用於多棟建築長途輸送。</div>',
+        en: '<p>Water systems are grouped into four temperature bands:</p><div class="formula-block">(a) Low temp warm water:      40 – 70  °C\n(b) Low temp hot water:       70 – 100 °C\n(c) Medium temp hot water:   110 – 130 °C\n(d) High temp hot water:     140 – 180 °C</div><div class="key-point"><strong>Trade-off:</strong> Higher temperatures allow water to store more heat per kg, enabling <strong>smaller pipe diameters</strong>, but require <strong>heavier pipes</strong> to handle elevated pressure.</div>'
       }
     ]
   },
@@ -219,19 +210,19 @@ const notesData = [
         <rect x="0" y="25" width="350" height="280" fill="#243342" stroke="#e74c3c" stroke-width="2" rx="8"/>
         <text x="175" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#ff7675">Single-Pipe Circuit (單管串聯回路)</text>
         <rect x="25" y="135" width="45" height="55" fill="#78281f" stroke="#c0392b" rx="2"/>
-        <text x="47" y="167" text-anchor="middle" font-size="8.5" fill="#fff">Boiler</text>
+        <text x="47" y="167" text-anchor="middle" font-size="8.5" fill="#ffffff">Boiler</text>
         <path d="M 70 145 L 120 145 L 120 65 L 305 65 L 305 185 L 70 185" fill="none" stroke="#ff7675" stroke-width="4" class="flow-hot-water"/>
         <!-- Radiators with drop temps -->
         <rect x="120" y="70" width="40" height="40" fill="#1a252f" stroke="#ff7675"/>
-        <text x="140" y="92" text-anchor="middle" font-size="8" fill="#fff">Rad A</text>
+        <text x="140" y="92" text-anchor="middle" font-size="8" fill="#ffffff">Rad A</text>
         <text x="140" y="125" text-anchor="middle" font-size="8" fill="#ff7675" font-weight="bold">100°C</text>
         <rect x="185" y="70" width="48" height="40" fill="#1a252f" stroke="#f39c12"/>
-        <text x="209" y="92" text-anchor="middle" font-size="8" fill="#fff">Rad B</text>
+        <text x="209" y="92" text-anchor="middle" font-size="8" fill="#ffffff">Rad B</text>
         <text x="209" y="125" text-anchor="middle" font-size="8" fill="#f39c12" font-weight="bold">85°C</text>
         <rect x="250" y="70" width="55" height="40" fill="#1a252f" stroke="#3498db"/>
-        <text x="277" y="92" text-anchor="middle" font-size="8" fill="#fff">Rad C</text>
+        <text x="277" y="92" text-anchor="middle" font-size="8" fill="#ffffff">Rad C</text>
         <text x="277" y="125" text-anchor="middle" font-size="8" fill="#00d2d3" font-weight="bold">70°C</text>
-        <rect x="20" y="200" width="310" height="90" fill="#111" stroke="#e74c3c" rx="4"/>
+        <rect x="20" y="200" width="310" height="90" fill="#111111" stroke="#e74c3c" rx="4"/>
         <text x="175" y="222" text-anchor="middle" font-size="10" fill="#ff7675" font-weight="bold">Water cools progressively along loop:</text>
         <text x="175" y="242" text-anchor="middle" font-size="8.5" fill="#ecf0f1">Exiting cooled water returns into the SAME pipe.</text>
         <text x="175" y="260" text-anchor="middle" font-size="9" fill="#f1c40f" font-weight="bold">Downstream radiators MUST be larger for equal output!</text>
@@ -241,19 +232,19 @@ const notesData = [
         <rect x="0" y="25" width="350" height="280" fill="#243342" stroke="#2ecc71" stroke-width="2" rx="8"/>
         <text x="175" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#2ecc71">Two-Pipe Reverse-Return (雙管同程自平衡)</text>
         <rect x="25" y="135" width="45" height="55" fill="#78281f" stroke="#c0392b" rx="2"/>
-        <text x="47" y="167" text-anchor="middle" font-size="8.5" fill="#fff">Boiler</text>
+        <text x="47" y="167" text-anchor="middle" font-size="8.5" fill="#ffffff">Boiler</text>
         <!-- Supply Header -->
         <path d="M 70 145 L 110 145 L 110 60 L 305 60" fill="none" stroke="#ff7675" stroke-width="3.5" class="flow-hot-water"/>
         <!-- Reverse-Return Header -->
         <path d="M 130 115 L 130 140 L 305 140 L 325 140 L 325 185 L 70 185" fill="none" stroke="#00d2d3" stroke-width="3.5" class="flow-return-water"/>
         <!-- Parallel Radiators with same temp -->
         <rect x="130" y="75" width="45" height="42" fill="#1a252f" stroke="#2ecc71"/>
-        <text x="152" y="98" text-anchor="middle" font-size="8" fill="#fff">Rad A</text>
+        <text x="152" y="98" text-anchor="middle" font-size="8" fill="#ffffff">Rad A</text>
         <rect x="195" y="75" width="45" height="42" fill="#1a252f" stroke="#2ecc71"/>
-        <text x="217" y="98" text-anchor="middle" font-size="8" fill="#fff">Rad B</text>
+        <text x="217" y="98" text-anchor="middle" font-size="8" fill="#ffffff">Rad B</text>
         <rect x="260" y="75" width="45" height="42" fill="#1a252f" stroke="#2ecc71"/>
-        <text x="282" y="98" text-anchor="middle" font-size="8" fill="#fff">Rad C</text>
-        <rect x="20" y="200" width="310" height="90" fill="#111" stroke="#2ecc71" rx="4"/>
+        <text x="282" y="98" text-anchor="middle" font-size="8" fill="#ffffff">Rad C</text>
+        <rect x="20" y="200" width="310" height="90" fill="#111111" stroke="#2ecc71" rx="4"/>
         <text x="175" y="222" text-anchor="middle" font-size="10" fill="#2ecc71" font-weight="bold">Parallel Feed + Equal Total Length:</text>
         <text x="175" y="242" text-anchor="middle" font-size="8.5" fill="#ecf0f1">All radiators receive identical supply water temperature.</text>
         <text x="175" y="260" text-anchor="middle" font-size="9" fill="#f1c40f" font-weight="bold">Total friction loss equal ➔ Natural flow balancing!</text>
@@ -263,8 +254,8 @@ const notesData = [
     sections: [
       {
         title: 'Single-Pipe vs Reverse-Return / 單管 vs 雙管同程對比',
-        zh: '<p><strong>單管系統 (Single-pipe)</strong>：單管串聯所有散熱器[cite: 13]。散熱器出水返回同管，水溫<strong>越遠越凍</strong>（100°C ➔ 85°C ➔ 70°C），<strong>後端散熱器必須加大面積</strong>以保證散熱量[cite: 13]；</p><p><strong>雙管同程 (Two-pipe reverse-return)</strong>：供水與回水兩管並聯，<strong>先供水者後回水（First fed, last returned）</strong>[cite: 13]。每個迴路<strong>總管長完全相等、阻力相同，流量自然平衡</strong>，各散熱器水溫均勻[cite: 13]。</p>',
-        en: '<p><strong>Single-pipe</strong>: Radiators in series; water temperature drops downstream, requiring <strong>progressively larger radiators</strong>[cite: 13].</p><p><strong>Two-pipe reverse-return</strong>: Radiators in parallel; each loop has the <strong>same total pipe length and friction loss, balancing flow naturally</strong>[cite: 13].</p>'
+        zh: '<p><strong>單管系統 (Single-pipe)</strong>：單管串聯所有散熱器。散熱器出水返回同管，水溫<strong>越遠越凍</strong>（100°C ➔ 85°C ➔ 70°C），<strong>後端散熱器必須加大面積</strong>以保證散熱量；</p><p><strong>雙管同程 (Two-pipe reverse-return)</strong>：供水與回水兩管並聯，<strong>先供水者後回水（First fed, last returned）</strong>。每個迴路<strong>總管長完全相等、阻力相同，流量自然平衡</strong>，各散熱器水溫均勻。</p>',
+        en: '<p><strong>Single-pipe</strong>: Radiators in series; water temperature drops downstream, requiring <strong>progressively larger radiators</strong>.</p><p><strong>Two-pipe reverse-return</strong>: Radiators in parallel; each loop has the <strong>same total pipe length and friction loss, balancing flow naturally</strong>.</p>'
       }
     ]
   },
@@ -277,12 +268,12 @@ const notesData = [
         <text x="360" y="16" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1abc9c">Low-Pressure Steam System: Dry vs Wet Return &amp; District CHP (蒸汽供熱與回流管路)</text>
         <!-- Steam Boiler -->
         <rect x="50" y="85" width="90" height="95" fill="#78281f" stroke="#c0392b" rx="4"/>
-        <text x="95" y="125" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">Boiler</text>
+        <text x="95" y="125" text-anchor="middle" font-size="10" fill="#ffffff" font-weight="bold">Boiler</text>
         <line x1="95" y1="145" x2="95" y2="145" stroke="#00d2d3" stroke-width="4"/>
         <text x="95" y="160" text-anchor="middle" font-size="8" fill="#00d2d3">Water Line</text>
         <!-- Steam Main -->
         <path d="M 95 85 L 95 50 L 640 50" stroke="#ffffff" stroke-width="5" class="flow-steam"/>
-        <text x="370" y="42" text-anchor="middle" font-size="9.5" fill="#fff" font-weight="bold">Steam Pipe (Sensible + Latent Heat)</text>
+        <text x="370" y="42" text-anchor="middle" font-size="9.5" fill="#ffffff" font-weight="bold">Steam Pipe (Sensible + Latent Heat)</text>
         <!-- Dry Return Line (Above water line) -->
         <path d="M 640 105 L 140 105" stroke="#00d2d3" stroke-width="3.5" class="flow-return-water"/>
         <text x="370" y="98" text-anchor="middle" font-size="9" fill="#5dade2">Dry Return: Condensate pipe ABOVE boiler water level</text>
@@ -290,8 +281,8 @@ const notesData = [
         <path d="M 640 170 L 140 170" stroke="#00d2d3" stroke-width="3.5" stroke-dasharray="4 2"/>
         <text x="370" y="185" text-anchor="middle" font-size="9" fill="#2ecc71">Wet Return: Condensate pipe BELOW boiler water level</text>
         <!-- Callout Box -->
-        <rect x="40" y="205" width="640" height="85" fill="#111" stroke="#1abc9c" rx="4"/>
-        <text x="360" y="228" text-anchor="middle" font-size="10.5" fill="#fff"><strong>District Heating &amp; Combined Heat and Power (CHP):</strong> Steam produced centrally by utility plants and piped to buildings.</text>
+        <rect x="40" y="205" width="640" height="85" fill="#111111" stroke="#1abc9c" rx="4"/>
+        <text x="360" y="228" text-anchor="middle" font-size="10.5" fill="#ffffff">District Heating &amp; Combined Heat and Power (CHP): Steam produced centrally by utility plants and piped to buildings.</text>
         <text x="360" y="248" text-anchor="middle" font-size="9.5" fill="#f1c40f">Advantages: Higher heat capacity per kg (latent heat) enables long-distance distribution at lower running cost.</text>
         <text x="360" y="268" text-anchor="middle" font-size="9.5" fill="#ff7675">Disadvantages: Disposing of condensate and removing air from long pipework are major engineering headaches.</text>
       </g>
@@ -300,8 +291,8 @@ const notesData = [
     sections: [
       {
         title: 'Steam System Mechanics & District CHP / 蒸汽系統與區域供熱',
-        zh: '<p>蒸汽系統利用相變<strong>潛熱 (latent heat)</strong> 傳熱[cite: 13]：</p><ul><li><strong>乾回流 (Dry return)</strong>：凝水管敷設於<strong>鍋爐水位線之上</strong>[cite: 13]；</li><li><strong>濕回流 (Wet return)</strong>：凝水管敷設於<strong>鍋爐水位線之下</strong>[cite: 13]；</li><li><strong>區域供熱 / 熱電聯產 (District heating / CHP)</strong>：電廠廢熱蒸汽集中輸送，大廈免設鍋爐與煙囪[cite: 13]。優點是潛熱大、適合長途輸送；缺點是<strong>凝結水排放與管道排氣困難</strong>[cite: 13]。</li></ul>',
-        en: '<p>Steam uses latent heat of vaporization[cite: 13]:</p><ul><li><strong>Dry return</strong>: Condensate pipe is <strong>above boiler water level</strong>[cite: 13];</li><li><strong>Wet return</strong>: Condensate pipe is <strong>below boiler water level</strong>[cite: 13];</li><li><strong>District heating / CHP</strong>: High heat capacity per kg allows long-distance transport, but <strong>condensate disposal and air removal are major challenges</strong>[cite: 13].</li></ul>'
+        zh: '<p>蒸汽系統利用相變<strong>潛熱 (latent heat)</strong> 傳熱：</p><ul><li><strong>乾回流 (Dry return)</strong>：凝水管敷設於<strong>鍋爐水位線之上</strong>；</li><li><strong>濕回流 (Wet return)</strong>：凝水管敷設於<strong>鍋爐水位線之下</strong>；</li><li><strong>區域供熱 / 熱電聯產 (District heating / CHP)</strong>：電廠廢熱蒸汽集中輸送，大廈免設鍋爐與煙囪。優點是潛熱大、適合長途輸送；缺點是<strong>凝結水排放與管道排氣困難</strong>。</li></ul>',
+        en: '<p>Steam uses latent heat of vaporization:</p><ul><li><strong>Dry return</strong>: Condensate pipe is <strong>above boiler water level</strong>;</li><li><strong>Wet return</strong>: Condensate pipe is <strong>below boiler water level</strong>;</li><li><strong>District heating / CHP</strong>: High heat capacity per kg allows long-distance transport, but <strong>condensate disposal and air removal are major challenges</strong>.</li></ul>'
       }
     ]
   },
@@ -313,9 +304,9 @@ const notesData = [
         <rect x="0" y="25" width="165" height="280" fill="#243342" stroke="#e74c3c" stroke-width="2" rx="6"/>
         <text x="82" y="16" text-anchor="middle" font-size="11" font-weight="bold" fill="#ff7675">1. Radiant Panel</text>
         <rect x="25" y="45" width="115" height="75" fill="#1a252f" stroke="#e74c3c"/>
-        <text x="82" y="80" text-anchor="middle" font-size="8.5" fill="#fff">Steel Panel</text>
+        <text x="82" y="80" text-anchor="middle" font-size="8.5" fill="#ffffff">Steel Panel</text>
         <text x="82" y="98" text-anchor="middle" font-size="8.5" fill="#f1c40f">100–150 °C</text>
-        <rect x="10" y="135" width="145" height="155" fill="#111" stroke="#e74c3c" rx="3"/>
+        <rect x="10" y="135" width="145" height="155" fill="#111111" stroke="#e74c3c" rx="3"/>
         <text x="82" y="158" text-anchor="middle" font-size="9" fill="#f5b7b1">• 60% Rad + 40% Conv</text>
         <text x="82" y="180" text-anchor="middle" font-size="8.5" fill="#ecf0f1">• High factories</text>
         <text x="82" y="202" text-anchor="middle" font-size="8.5" fill="#ecf0f1">• Medium/high T water</text>
@@ -325,9 +316,9 @@ const notesData = [
         <rect x="0" y="25" width="175" height="280" fill="#243342" stroke="#f39c12" stroke-width="2" rx="6"/>
         <text x="87" y="16" text-anchor="middle" font-size="11" font-weight="bold" fill="#f39c12">2. Radiator (Window)</text>
         <rect x="25" y="45" width="125" height="75" fill="#1a252f" stroke="#f39c12"/>
-        <text x="87" y="80" text-anchor="middle" font-size="8.5" fill="#fff">Cast iron / Steel</text>
+        <text x="87" y="80" text-anchor="middle" font-size="8.5" fill="#ffffff">Cast iron / Steel</text>
         <text x="87" y="98" text-anchor="middle" font-size="8.5" fill="#2ecc71">Under Window</text>
-        <rect x="10" y="135" width="155" height="155" fill="#111" stroke="#f39c12" rx="3"/>
+        <rect x="10" y="135" width="155" height="155" fill="#111111" stroke="#f39c12" rx="3"/>
         <text x="87" y="158" text-anchor="middle" font-size="9" fill="#f1c40f">• 70% Conv + 30% Rad</text>
         <text x="87" y="180" text-anchor="middle" font-size="8.5" fill="#ecf0f1">• Placed under windows</text>
         <text x="87" y="202" text-anchor="middle" font-size="8.5" fill="#abebc6">• Cancels cold downdraft</text>
@@ -337,9 +328,9 @@ const notesData = [
         <rect x="0" y="25" width="170" height="280" fill="#243342" stroke="#16a085" stroke-width="2" rx="6"/>
         <text x="85" y="16" text-anchor="middle" font-size="11" font-weight="bold" fill="#1abc9c">3. Convector</text>
         <rect x="25" y="45" width="120" height="75" fill="#1a252f" stroke="#16a085"/>
-        <text x="85" y="78" text-anchor="middle" font-size="8.5" fill="#fff">Finned Element</text>
+        <text x="85" y="78" text-anchor="middle" font-size="8.5" fill="#ffffff">Finned Element</text>
         <text x="85" y="98" text-anchor="middle" font-size="8.5" fill="#f1c40f">Chimney Effect</text>
-        <rect x="10" y="135" width="150" height="155" fill="#111" stroke="#16a085" rx="3"/>
+        <rect x="10" y="135" width="150" height="155" fill="#111111" stroke="#16a085" rx="3"/>
         <text x="85" y="158" text-anchor="middle" font-size="9" fill="#1abc9c">• Pure Convective</text>
         <text x="85" y="180" text-anchor="middle" font-size="8.5" fill="#ecf0f1">• Rising column of air</text>
         <text x="85" y="202" text-anchor="middle" font-size="8.5" fill="#bdc3c7">• Air drawn in at base</text>
@@ -349,9 +340,9 @@ const notesData = [
         <rect x="0" y="25" width="175" height="280" fill="#243342" stroke="#9b59b6" stroke-width="2" rx="6"/>
         <text x="87" y="16" text-anchor="middle" font-size="11" font-weight="bold" fill="#bb86fc">4. Embedded Panel</text>
         <rect x="25" y="45" width="125" height="75" fill="#1a252f" stroke="#9b59b6"/>
-        <text x="87" y="78" text-anchor="middle" font-size="8.5" fill="#fff">Pipes in Floor</text>
+        <text x="87" y="78" text-anchor="middle" font-size="8.5" fill="#ffffff">Pipes in Floor</text>
         <text x="87" y="98" text-anchor="middle" font-size="8.5" fill="#f1c40f">27 °C – 50 °C</text>
-        <rect x="10" y="135" width="155" height="155" fill="#111" stroke="#9b59b6" rx="3"/>
+        <rect x="10" y="135" width="155" height="155" fill="#111111" stroke="#9b59b6" rx="3"/>
         <text x="87" y="158" text-anchor="middle" font-size="9" fill="#bb86fc">• Large thermal mass</text>
         <text x="87" y="180" text-anchor="middle" font-size="8.5" fill="#ecf0f1">• Very uniform heating</text>
         <text x="87" y="202" text-anchor="middle" font-size="8.5" fill="#d7bde2">• Safe surface temp</text>
@@ -362,8 +353,8 @@ const notesData = [
     sections: [
       {
         title: 'Four Emitter Types & Placement Rules / 四大散熱設備特性',
-        zh: '<ul><li><strong>金屬輻射板 (Radiant panel)</strong>：表面 <strong>100–150 °C</strong>，<strong>60% 輻射 + 40% 對流</strong>，適合大廠房[cite: 13]；</li><li><strong>散熱器 (Radiator)</strong>：<strong>70% 對流 + 30% 輻射</strong>[cite: 13]。<strong>最佳安裝在窗下</strong>，用上升暖氣流抵消外窗冷下沉氣流，使室內垂直溫度梯度更均勻[cite: 13]；</li><li><strong>對流器 (Convector)</strong>：利用底部鰭片管加熱氣流，產生<strong>煙囪效應 (chimney effect)</strong>[cite: 13]；</li><li><strong>嵌入式板 (Embedded panel)</strong>：埋於地板或牆體，表面 <strong>27–50 °C</strong>，蓄熱量大，關熱源後可持續放熱[cite: 13]。</li></ul>',
-        en: '<ul><li><strong>Radiant panel</strong>: 100–150 °C, <strong>60% rad + 40% conv</strong>, ideal for high factories[cite: 13];</li><li><strong>Radiator</strong>: <strong>70% conv + 30% rad</strong>, <strong>best under windows</strong> to cancel cold downdrafts[cite: 13];</li><li><strong>Convector</strong>: Enclosed finned element operating via <strong>chimney effect</strong>[cite: 13];</li><li><strong>Embedded panel</strong>: 27–50 °C surface, high thermal storage capacity[cite: 13].</li></ul>'
+        zh: '<ul><li><strong>金屬輻射板 (Radiant panel)</strong>：表面 <strong>100–150 °C</strong>，<strong>60% 輻射 + 40% 對流</strong>，適合大廠房；</li><li><strong>散熱器 (Radiator)</strong>：<strong>70% 對流 + 30% 輻射</strong>。<strong>最佳安裝在窗下</strong>，用上升暖氣流抵消外窗冷下沉氣流，使室內垂直溫度梯度更均勻；</li><li><strong>對流器 (Convector)</strong>：利用底部鰭片管加熱氣流，產生<strong>煙囪效應 (chimney effect)</strong>；</li><li><strong>嵌入式板 (Embedded panel)</strong>：埋於地板或牆體，表面 <strong>27–50 °C</strong>，蓄熱量大，關熱源後可持續放熱。</li></ul>',
+        en: '<ul><li><strong>Radiant panel</strong>: 100–150 °C, <strong>60% rad + 40% conv</strong>, ideal for high factories;</li><li><strong>Radiator</strong>: <strong>70% conv + 30% rad</strong>, <strong>best under windows</strong> to cancel cold downdrafts;</li><li><strong>Convector</strong>: Enclosed finned element operating via <strong>chimney effect</strong>;</li><li><strong>Embedded panel</strong>: 27–50 °C surface, high thermal storage capacity.</li></ul>'
       }
     ]
   },
@@ -379,7 +370,7 @@ const notesData = [
         <!-- Heater Elements in Middle -->
         <rect x="310" y="52" width="55" height="67" fill="#78281f" stroke="#e74c3c" stroke-width="2"/>
         <path d="M 325 58 L 325 112 M 338 58 L 338 112 M 350 58 L 350 112" stroke="#f1c40f" stroke-width="2.5"/>
-        <text x="337" y="88" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">Heater</text>
+        <text x="337" y="88" text-anchor="middle" font-size="8" fill="#ffffff" font-weight="bold">Heater</text>
         <!-- 1000 mm No Insulation Zone -->
         <rect x="180" y="50" width="130" height="15" fill="#e74c3c" opacity="0.35"/>
         <rect x="365" y="50" width="130" height="15" fill="#e74c3c" opacity="0.35"/>
@@ -387,19 +378,19 @@ const notesData = [
         <text x="430" y="42" font-size="8.5" fill="#ff7675" font-weight="bold">Min 1000 mm No-Insulation</text>
         <!-- Overheat stat at max 600 mm -->
         <circle cx="425" cy="85" r="11" fill="#f39c12"/>
-        <text x="425" y="89" text-anchor="middle" font-size="7.5" fill="#111" font-weight="bold">Stat</text>
+        <text x="425" y="89" text-anchor="middle" font-size="7.5" fill="#111111" font-weight="bold">Stat</text>
         <text x="425" y="112" text-anchor="middle" font-size="8" fill="#f1c40f">≤600mm / 50°C / 90s</text>
         <!-- Sail switch -->
         <polygon points="485,85 500,75 500,95" fill="#00d2d3"/>
         <text x="505" y="88" font-size="8" fill="#00d2d3">Sail switch</text>
         <!-- Summary Matrix of 8 Rules -->
-        <rect x="40" y="135" width="640" height="155" fill="#111" stroke="#1abc9c" rx="4"/>
-        <text x="50" y="156" font-size="9.5" fill="#fff">1. 1000 mm Clearance: No internal acoustic/thermal duct insulation within 1000 mm of heater.</text>
-        <text x="50" y="174" font-size="9.5" fill="#fff">2. Sequence Interlock: Heater CANNOT be energized before the fan motor starts.</text>
+        <rect x="40" y="135" width="640" height="155" fill="#111111" stroke="#1abc9c" rx="4"/>
+        <text x="50" y="156" font-size="9.5" fill="#ffffff">1. 1000 mm Clearance: No internal acoustic/thermal duct insulation within 1000 mm of heater.</text>
+        <text x="50" y="174" font-size="9.5" fill="#ffffff">2. Sequence Interlock: Heater CANNOT be energized before the fan motor starts.</text>
         <text x="50" y="192" font-size="9.5" fill="#f1c40f">3. 3-Minute Fan Delay: On fan shut-off, heater cuts instantly while fan runs ≥ 3 mins to clear heat.</text>
-        <text x="50" y="210" font-size="9.5" fill="#fff">4. Emergency Stop Button: Mushroom head with manual reset overrides timer for instant stop.</text>
-        <text x="50" y="228" font-size="9.5" fill="#fff">5. Airflow Failure: Fail-safe sail switch / differential pressure switch cuts power on zero flow.</text>
-        <text x="50" y="246" font-size="9.5" fill="#fff">6. Overheat Stat: Located ≤ 600 mm, trips within 90 s if duct mean temp exceeds 50 °C ± 10%.</text>
+        <text x="50" y="210" font-size="9.5" fill="#ffffff">4. Emergency Stop Button: Mushroom head with manual reset overrides timer for instant stop.</text>
+        <text x="50" y="228" font-size="9.5" fill="#ffffff">5. Airflow Failure: Fail-safe sail switch / differential pressure switch cuts power on zero flow.</text>
+        <text x="50" y="246" font-size="9.5" fill="#ffffff">6. Overheat Stat: Located ≤ 600 mm, trips within 90 s if duct mean temp exceeds 50 °C ± 10%.</text>
         <text x="50" y="264" font-size="9.5" fill="#ecf0f1">7. Fail-Safe: Switches de-energize elements on loss of control power.</text>
         <text x="50" y="280" font-size="9" fill="#2ecc71">8. ≤ 2 kW Relaxation: Small FCUs require only sequence interlock &amp; overheat stat.</text>
       </g>
@@ -408,8 +399,8 @@ const notesData = [
     sections: [
       {
         title: '8 Mandatory Safety Interlocks / 八大安全聯鎖要求',
-        zh: '<p>風管電加熱器安全控制規範（Slide 24–25）[cite: 13]：</p><ol><li><strong>1000 mm 禁保溫區</strong>：加熱器前後 <strong>1000 mm 範圍內嚴禁安裝風管內部保溫層</strong>[cite: 13]；</li><li><strong>順序聯鎖</strong>：風扇未開動前，電加熱器不能通電[cite: 13]；</li><li><strong>3 分鐘延時停機</strong>：關閉風機時，電加熱器立即斷電，但<strong>風機必須持續運轉至少 3 分鐘</strong>[cite: 13]；</li><li><strong>緊急停機按鈕</strong>：靠近電機設蘑菇頭手動復位急停掣，可凌駕延時電路即時停機[cite: 13]；</li><li><strong>氣流失效控制</strong>：設風帆開關 (sail switch)，無風即斷電[cite: 13]；</li><li><strong>過熱溫控器</strong>：距電熱器<strong>最遠 600 mm</strong> 處設過熱溫控器，風管均溫超過 <strong>50 °C ± 10%</strong> 時<strong>在 90 秒內斷電</strong>[cite: 13]；</li><li><strong>失效安全 (Fail-safe)</strong>：控制迴路斷電時，加熱元件必須自動斷開[cite: 13]；</li><li><strong>≤ 2 kW 小型 FCU 豁免</strong>：電熱總功率 ≤ 2 kW 時，安全要求簡化為順序聯鎖與過熱溫控[cite: 13]。</li></ol>',
-        en: '<p>Statutory safety requirements for electric duct heaters (Slide 24–25)[cite: 13]:</p><ol><li><strong>1000 mm clearance</strong>: No internal insulation within 1000 mm[cite: 13];</li><li><strong>Sequence interlock</strong>: Heaters cannot energize before fan starts[cite: 13];</li><li><strong>3-minute fan delay</strong>: Heater cuts instantly; fan runs &ge; 3 mins to clear heat[cite: 13];</li><li><strong>Emergency stop</strong>: Mushroom head manual reset overrides delay[cite: 13];</li><li><strong>Airflow failure</strong>: Fail-safe sail switch de-energizes elements[cite: 13];</li><li><strong>Overheat stat</strong>: Within <strong>600 mm</strong>, trips in &le; <strong>90 s</strong> at <strong>50 °C &plusmn; 10%</strong>[cite: 13];</li><li><strong>Fail-safe</strong>: Drops out upon power loss[cite: 13];</li><li><strong>&le; 2 kW relaxation</strong>: Small FCUs require only items 2 and 6[cite: 13].</li></ol>'
+        zh: '<p>風管電加熱器安全控制規範（Slide 24–25）：</p><ol><li><strong>1000 mm 禁保溫區</strong>：加熱器前後 <strong>1000 mm 範圍內嚴禁安裝風管內部保溫層</strong>；</li><li><strong>順序聯鎖</strong>：風扇未開動前，電加熱器不能通電；</li><li><strong>3 分鐘延時停機</strong>：關閉風機時，電加熱器立即斷電，但<strong>風機必須持續運轉至少 3 分鐘</strong>；</li><li><strong>緊急停機按鈕</strong>：靠近電機設蘑菇頭手動復位急停掣，可凌駕延時電路即時停機；</li><li><strong>氣流失效控制</strong>：設風帆開關 (sail switch)，無風即斷電；</li><li><strong>過熱溫控器</strong>：距電熱器<strong>最遠 600 mm</strong> 處設過熱溫控器，風管均溫超過 <strong>50 °C ± 10%</strong> 時<strong>在 90 秒內斷電</strong>；</li><li><strong>失效安全 (Fail-safe)</strong>：控制迴路斷電時，加熱元件必須自動斷開；</li><li><strong>≤ 2 kW 小型 FCU 豁免</strong>：電熱總功率 ≤ 2 kW 時，安全要求簡化為順序聯鎖與過熱溫控。</li></ol>',
+        en: '<p>Statutory safety requirements for electric duct heaters (Slide 24–25):</p><ol><li><strong>1000 mm clearance</strong>: No internal insulation within 1000 mm;</li><li><strong>Sequence interlock</strong>: Heaters cannot energize before fan starts;</li><li><strong>3-minute fan delay</strong>: Heater cuts instantly; fan runs &ge; 3 mins to clear heat;</li><li><strong>Emergency stop</strong>: Mushroom head manual reset overrides delay;</li><li><strong>Airflow failure</strong>: Fail-safe sail switch de-energizes elements;</li><li><strong>Overheat stat</strong>: Within <strong>600 mm</strong>, trips in &le; <strong>90 s</strong> at <strong>50 °C &plusmn; 10%</strong>;</li><li><strong>Fail-safe</strong>: Drops out upon power loss;</li><li><strong>&le; 2 kW relaxation</strong>: Small FCUs require only items 2 and 6.</li></ol>'
       }
     ]
   },
@@ -431,11 +422,11 @@ const notesData = [
           <text x="150" y="34" text-anchor="middle" font-size="8" fill="#f1c40f">Vapour Flow ➔</text>
           <line x1="215" y1="68" x2="85" y2="68" stroke="#2ecc71" stroke-width="2" stroke-dasharray="4 2"/>
           <text x="150" y="78" text-anchor="middle" font-size="8" fill="#2ecc71">⮜ Capillary Liquid Return</text>
-          <text x="150" y="105" text-anchor="middle" font-size="9" fill="#fff">Diameters: 15, 25, 32, 40, 50 mm</text>
+          <text x="150" y="105" text-anchor="middle" font-size="9" fill="#ffffff">Diameters: 15, 25, 32, 40, 50 mm</text>
         </g>
         <!-- Counterflow Matrix with Sealed Partition (Right) -->
         <g transform="translate(370, 45)">
-          <rect x="0" y="0" width="320" height="110" fill="#111" stroke="#3498db" rx="4"/>
+          <rect x="0" y="0" width="320" height="110" fill="#111111" stroke="#3498db" rx="4"/>
           <!-- Sealed partition in center -->
           <line x1="160" y1="0" x2="160" y2="110" stroke="#e74c3c" stroke-width="3.5"/>
           <text x="160" y="-6" text-anchor="middle" font-size="8.5" fill="#ff7675" font-weight="bold">Sealed Partition</text>
@@ -445,8 +436,8 @@ const notesData = [
           <text x="240" y="95" font-size="8.5" fill="#00d2d3">Cold Fresh Air</text>
           <text x="160" y="60" text-anchor="middle" font-size="9" fill="#2ecc71" font-weight="bold">Zero Cross-Contamination</text>
         </g>
-        <rect x="30" y="175" width="660" height="115" fill="#111" stroke="#1abc9c" rx="4"/>
-        <text x="360" y="198" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">Gravity-Assisted Inclination: Sloped with hot end below horizontal (5.7° / 10% slope or 90° vertical) boosts return rate.</text>
+        <rect x="30" y="175" width="660" height="115" fill="#111111" stroke="#1abc9c" rx="4"/>
+        <text x="360" y="198" text-anchor="middle" font-size="11" fill="#ffffff" font-weight="bold">Gravity-Assisted Inclination: Sloped with hot end below horizontal (5.7° / 10% slope or 90° vertical) boosts return rate.</text>
         <text x="360" y="220" text-anchor="middle" font-size="10" fill="#f1c40f">Pros: No moving parts, indefinite life, no external power, highly reliable independent tubes, compact geometry.</text>
         <text x="360" y="242" text-anchor="middle" font-size="11" fill="#ff7675" font-weight="bold">THE SINGLE DISADVANTAGE: Transfers SENSIBLE heat only — cannot recover or transfer latent moisture!</text>
       </g>
@@ -455,13 +446,13 @@ const notesData = [
     sections: [
       {
         title: 'Heat Pipe Phase-Change Cycle / 熱管相變運作原理',
-        zh: '<p><strong>熱管 (Heat pipe)</strong> 內附<strong>毛細芯 (wick)</strong> 並抽真空注入工質[cite: 13]：</p><ol><li>熱端吸收廢氣熱量蒸發汽化[cite: 13]；</li><li>蒸氣流向冷端放出<strong>汽化潛熱</strong>凝結[cite: 13]；</li><li>凝液沿毛細芯自動抽回熱端，<strong>無活動部件、無外接動力</strong>[cite: 13]。</li></ol>',
-        en: '<p>A <strong>heat pipe</strong> contains an internal <strong>capillary wick</strong> and working fluid under vacuum[cite: 13]:</p><ol><li>Heat evaporates fluid at the hot end[cite: 13];</li><li>Vapor migrates and condenses at the cold end, releasing latent heat[cite: 13];</li><li>Capillary wick returns liquid passively without moving parts[cite: 13].</li></ol>'
+        zh: '<p><strong>熱管 (Heat pipe)</strong> 內附<strong>毛細芯 (wick)</strong> 並抽真空注入工質：</p><ol><li>熱端吸收廢氣熱量蒸發汽化；</li><li>蒸氣流向冷端放出<strong>汽化潛熱</strong>凝結；</li><li>凝液沿毛細芯自動抽回熱端，<strong>無活動部件、無外接動力</strong>。</li></ol>',
+        en: '<p>A <strong>heat pipe</strong> contains an internal <strong>capillary wick</strong> and working fluid under vacuum:</p><ol><li>Heat evaporates fluid at the hot end;</li><li>Vapor migrates and condenses at the cold end, releasing latent heat;</li><li>Capillary wick returns liquid passively without moving parts.</li></ol>'
       },
       {
         title: 'Tilt Angles & Critical Limitation / 傾角增效與顯熱局限',
-        zh: '<div class="key-point"><strong>傾角增效與最大缺點（Slide 29–30）：</strong><br>• <strong>傾角增效</strong>：熱端向下傾斜 <strong>5.7°（10% 斜度）或 90°（垂直）</strong>，利用重力回流使傳熱量大增[cite: 13]；<br>• <strong>管徑規格</strong>：常用 <strong>15, 25, 32, 40, 50 mm</strong>[cite: 13]；<br>• <strong>密封隔板</strong>保證零交叉污染[cite: 13]；<br>• <strong>唯一缺點</strong>：<strong>只能傳遞顯熱 (Sensible heat only)，不能傳遞潛熱</strong>[cite: 13]！</div>',
-        en: '<div class="key-point"><strong>Tilt &amp; Limit (Slide 29–30):</strong><br>• <strong>Tilt</strong>: Sloping hot end down at <strong>5.7° (10%) or 90° (vertical)</strong> uses gravity to boost capacity[cite: 13];<br>• <strong>Diameters</strong>: <strong>15, 25, 32, 40, 50 mm</strong>[cite: 13];<br>• <strong>Con</strong>: Transfers <strong>sensible heat ONLY</strong>; does nothing for latent heat[cite: 13].</div>'
+        zh: '<div class="key-point"><strong>傾角增效與最大缺點：</strong><br>• <strong>傾角增效</strong>：熱端向下傾斜 <strong>5.7°（10% 斜度）或 90°（垂直）</strong>，利用重力回流使傳熱量大增；<br>• <strong>管徑規格</strong>：常用 <strong>15, 25, 32, 40, 50 mm</strong>；<br>• <strong>密封隔板</strong>保證零交叉污染；<br>• <strong>唯一缺點</strong>：<strong>只能傳遞顯熱 (Sensible heat only)，不能傳遞潛熱</strong>！</div>',
+        en: '<div class="key-point"><strong>Tilt &amp; Limit:</strong><br>• <strong>Tilt</strong>: Sloping hot end down at <strong>5.7° (10%) or 90° (vertical)</strong> uses gravity to boost capacity;<br>• <strong>Diameters</strong>: <strong>15, 25, 32, 40, 50 mm</strong>;<br>• <strong>Con</strong>: Transfers <strong>sensible heat ONLY</strong>; does nothing for latent heat.</div>'
       }
     ]
   },
@@ -477,18 +468,18 @@ const notesData = [
           <rect x="0" y="0" width="380" height="145" fill="#1a252f" stroke="#1abc9c" stroke-width="2" rx="4"/>
           <!-- Counterflow Ducts -->
           <rect x="10" y="15" width="360" height="42" fill="#78281f" stroke="#c0392b"/>
-          <text x="50" y="40" font-size="9" fill="#fff" font-weight="bold">Hot Moist Exhaust Air ➔➔</text>
+          <text x="50" y="40" font-size="9" fill="#ffffff" font-weight="bold">Hot Moist Exhaust Air ➔➔</text>
           <rect x="10" y="85" width="360" height="42" fill="#1b4f72" stroke="#3498db"/>
-          <text x="330" y="110" text-anchor="end" font-size="9" fill="#fff" font-weight="bold">⮜⮜ Cold Fresh Supply Air</text>
+          <text x="330" y="110" text-anchor="end" font-size="9" fill="#ffffff" font-weight="bold">⮜⮜ Cold Fresh Supply Air</text>
           <!-- Central Rotating Matrix -->
           <circle cx="190" cy="72" r="54" fill="#16a085" opacity="0.4" stroke="#12806d" stroke-width="3"/>
-          <circle cx="190" cy="72" r="10" fill="#111"/>
+          <circle cx="190" cy="72" r="10" fill="#111111"/>
           <!-- Purge Sector -->
           <path d="M 190 72 L 218 28 A 54 54 0 0 1 242 48 Z" fill="#f1c40f" stroke="#d4ac0d"/>
           <text x="250" y="38" font-size="8.5" fill="#f1c40f" font-weight="bold">Purge</text>
         </g>
         <g transform="translate(440, 45)">
-          <rect x="0" y="0" width="250" height="145" fill="#111" stroke="#f1c40f" rx="4"/>
+          <rect x="0" y="0" width="250" height="145" fill="#111111" stroke="#f1c40f" rx="4"/>
           <text x="125" y="24" text-anchor="middle" font-size="11" font-weight="bold" fill="#f1c40f">Performance &amp; Drawbacks:</text>
           <text x="12" y="48" font-size="9.5" fill="#2ecc71" font-weight="bold">• 70% to 90% Total Energy Recovery</text>
           <text x="20" y="64" font-size="8.5" fill="#abebc6">(Sensible AND latent moisture!)</text>
@@ -497,8 +488,8 @@ const notesData = [
           <text x="12" y="120" font-size="9" fill="#bdc3c7">• Slight cross-contamination</text>
           <text x="12" y="136" font-size="8.5" fill="#bdc3c7">• Corrosion risk &amp; maintenance</text>
         </g>
-        <rect x="35" y="205" width="655" height="85" fill="#111" stroke="#1abc9c" rx="4"/>
-        <text x="360" y="228" text-anchor="middle" font-size="10.5" fill="#fff">Slowly rotating porous honeycomb wheel coated with desiccant absorbs heat and moisture from exhaust,</text>
+        <rect x="35" y="205" width="655" height="85" fill="#111111" stroke="#1abc9c" rx="4"/>
+        <text x="360" y="228" text-anchor="middle" font-size="10.5" fill="#ffffff">Slowly rotating porous honeycomb wheel coated with desiccant absorbs heat and moisture from exhaust,</text>
         <text x="360" y="248" text-anchor="middle" font-size="9.5" fill="#f1c40f">transferring both to incoming supply air stream. Purge section uses clean air to flush cells before supply exposure.</text>
       </g>
     </svg>`,
@@ -506,13 +497,13 @@ const notesData = [
     sections: [
       {
         title: 'Enthalpy Wheel Full Heat Recovery / 焓輪全熱回收優點',
-        zh: '<p><strong>焓輪 (Enthalpy wheel)</strong> 填有吸濕多孔材料，慢速旋轉[cite: 13]：</p><div class="key-point"><strong>全熱回收效率（Slide 33）：</strong> 可同時傳遞<strong>顯熱與潛熱 (Sensible and latent heat)</strong>，回收效率高達 <strong>70% 至 90%</strong>[cite: 13]！</div>',
-        en: '<p>An <strong>enthalpy wheel</strong> slowly rotates a desiccant matrix between air streams[cite: 13]:</p><div class="key-point"><strong>High Efficiency (Slide 33):</strong> Recovers <strong>70% to 90% of exhaust energy—both sensible and latent</strong>[cite: 13].</div>'
+        zh: '<p><strong>焓輪 (Enthalpy wheel)</strong> 填有吸濕多孔材料，慢速旋轉：</p><div class="key-point"><strong>全熱回收效率：</strong> 可同時傳遞<strong>顯熱與潛熱 (Sensible and latent heat)</strong>，回收效率高達 <strong>70% 至 90%</strong>！</div>',
+        en: '<p>An <strong>enthalpy wheel</strong> slowly rotates a desiccant matrix between air streams:</p><div class="key-point"><strong>High Efficiency:</strong> Recovers <strong>70% to 90% of exhaust energy—both sensible and latent</strong>.</div>'
       },
       {
         title: 'Purge Section & 5 Drawbacks / 吹洗區與五大缺點',
-        zh: '<p><strong>吹洗區 (Purge)</strong> 減少交叉污染[cite: 13]；缺點為：① <strong>體積龐大 (2×2 m 至 5×5 m)</strong>[cite: 13]；② 風管佈置彎頭多[cite: 13]；③ 有微量交叉污染[cite: 13]；④ 易受煙氣腐蝕[cite: 13]；⑤ 需維護旋轉部件[cite: 13]。</p>',
-        en: '<p>A <strong>purge section</strong> reduces cross-contamination[cite: 13]. Cons: bulky (<strong>2×2 m to 5×5 m</strong>), complex ducts, slight cross-contamination, corrosion risk, and maintenance needs[cite: 13].</p>'
+        zh: '<p><strong>吹洗區 (Purge)</strong> 減少交叉污染；缺點為：① <strong>體積龐大 (2×2 m 至 5×5 m)</strong>；② 風管佈置彎頭多；③ 有微量交叉污染；④ 易受煙氣腐蝕；⑤ 需維護旋轉部件。</p>',
+        en: '<p>A <strong>purge section</strong> reduces cross-contamination. Cons: bulky (<strong>2×2 m to 5×5 m</strong>), complex ducts, slight cross-contamination, corrosion risk, and maintenance needs.</p>'
       }
     ]
   },
@@ -525,15 +516,15 @@ const notesData = [
         <rect x="0" y="25" width="350" height="280" fill="#243342" stroke="#3498db" stroke-width="2" rx="8"/>
         <text x="175" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="#3498db">(a) Run-Around Coils (環形雙盤管)</text>
         <rect x="25" y="45" width="130" height="55" fill="#78281f" stroke="#e74c3c"/>
-        <text x="90" y="77" text-anchor="middle" font-size="9" fill="#fff">Exhaust Coil 1</text>
+        <text x="90" y="77" text-anchor="middle" font-size="9" fill="#ffffff">Exhaust Coil 1</text>
         <rect x="195" y="45" width="130" height="55" fill="#1b4f72" stroke="#3498db"/>
-        <text x="260" y="77" text-anchor="middle" font-size="9" fill="#fff">Supply Coil 2</text>
+        <text x="260" y="77" text-anchor="middle" font-size="9" fill="#ffffff">Supply Coil 2</text>
         <path d="M 90 100 L 90 145 L 260 145 L 260 100" fill="none" stroke="#2ecc71" stroke-width="3.5" class="flow-refrigerant"/>
         <circle cx="175" cy="145" r="15" fill="#16a085"/>
-        <text x="175" y="149" text-anchor="middle" font-size="8.5" fill="#fff">Pump</text>
-        <rect x="15" y="180" width="320" height="110" fill="#111" stroke="#3498db" rx="4"/>
+        <text x="175" y="149" text-anchor="middle" font-size="8.5" fill="#ffffff">Pump</text>
+        <rect x="15" y="180" width="320" height="110" fill="#111111" stroke="#3498db" rx="4"/>
         <text x="175" y="202" text-anchor="middle" font-size="10.5" fill="#5dade2" font-weight="bold">Closed Hydronic Loop (Water/Glycol):</text>
-        <text x="25" y="224" font-size="9" fill="#ecf0f1">• Sensible heat efficiency up to <strong>70%</strong></text>
+        <text x="25" y="224" font-size="9" fill="#ecf0f1">• Sensible heat efficiency up to <tspan fill="#f1c40f" font-weight="bold">70%</tspan></text>
         <text x="25" y="244" font-size="9.5" fill="#2ecc71" font-weight="bold">• Coils can be located completely FAR APART!</text>
         <text x="25" y="264" font-size="8.5" fill="#bdc3c7">Ideal for retrofits and hospital exhaust isolation.</text>
       </g>
@@ -544,10 +535,10 @@ const notesData = [
         <circle cx="175" cy="100" r="58" fill="#1a252f" stroke="#ecf0f1" stroke-width="2"/>
         <line x1="175" y1="42" x2="175" y2="158" stroke="#7f8c8d" stroke-width="2" stroke-dasharray="3 2"/>
         <rect x="130" y="70" width="35" height="60" fill="#78281f" stroke="#e74c3c"/>
-        <text x="147" y="105" text-anchor="middle" font-size="8" fill="#fff" transform="rotate(-90 147 105)">Heating</text>
+        <text x="147" y="105" text-anchor="middle" font-size="8" fill="#ffffff" transform="rotate(-90 147 105)">Heating</text>
         <rect x="185" y="70" width="35" height="60" fill="#1b4f72" stroke="#3498db"/>
-        <text x="202" y="105" text-anchor="middle" font-size="8" fill="#fff" transform="rotate(-90 202 105)">Tower</text>
-        <rect x="15" y="180" width="320" height="110" fill="#111" stroke="#e67e22" rx="4"/>
+        <text x="202" y="105" text-anchor="middle" font-size="8" fill="#ffffff" transform="rotate(-90 202 105)">Tower</text>
+        <rect x="15" y="180" width="320" height="110" fill="#111111" stroke="#e67e22" rx="4"/>
         <text x="175" y="202" text-anchor="middle" font-size="10.5" fill="#f1c40f" font-weight="bold">Simultaneous Cooling and Heating:</text>
         <text x="25" y="224" font-size="9" fill="#ecf0f1">• Heating bundle delivers heat to perimeter coils</text>
         <text x="25" y="244" font-size="9" fill="#ecf0f1">• Tower bundle sheds surplus heat to cooling tower</text>
@@ -572,15 +563,15 @@ const notesData = [
         <text x="360" y="16" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1abc9c">Heat Pump Cycle, COP Formulation &amp; Cascade System (熱泵熱力循環與串級供熱)</text>
         <!-- Cold Source -->
         <rect x="40" y="75" width="130" height="85" fill="#1b4f72" stroke="#3498db" rx="4"/>
-        <text x="105" y="112" text-anchor="middle" font-size="10.5" fill="#fff" font-weight="bold">Cold Source T2</text>
+        <text x="105" y="112" text-anchor="middle" font-size="10.5" fill="#ffffff" font-weight="bold">Cold Source T2</text>
         <text x="105" y="132" text-anchor="middle" font-size="8.5" fill="#00d2d3">River / Ambient Air</text>
         <!-- Heat Pump Module -->
         <circle cx="360" cy="117" r="48" fill="#1a252f" stroke="#16a085" stroke-width="3"/>
         <text x="360" y="112" text-anchor="middle" font-size="11" fill="#1abc9c" font-weight="bold">HEAT PUMP</text>
-        <text x="360" y="128" text-anchor="middle" font-size="9" fill="#fff">熱泵機組</text>
+        <text x="360" y="128" text-anchor="middle" font-size="9" fill="#ffffff">熱泵機組</text>
         <!-- Hot Sink -->
         <rect x="550" y="75" width="130" height="85" fill="#78281f" stroke="#e74c3c" rx="4"/>
-        <text x="615" y="112" text-anchor="middle" font-size="10.5" fill="#fff" font-weight="bold">Hot Sink T1</text>
+        <text x="615" y="112" text-anchor="middle" font-size="10.5" fill="#ffffff" font-weight="bold">Hot Sink T1</text>
         <text x="615" y="132" text-anchor="middle" font-size="8.5" fill="#ff7675">Space Heating Load</text>
         <!-- Energy arrows -->
         <path d="M 170 117 L 312 117" stroke="#00d2d3" stroke-width="5" class="flow-return-water"/>
@@ -589,7 +580,7 @@ const notesData = [
         <text x="360" y="34" text-anchor="middle" font-size="9" fill="#f1c40f" font-weight="bold">Work Input W (Electricity)</text>
         <path d="M 408 117 L 550 117" stroke="#ff7675" stroke-width="5" class="flow-hot-water"/>
         <text x="479" y="105" text-anchor="middle" font-size="10" fill="#ff7675" font-weight="bold">Q1 Delivered</text>
-        <rect x="40" y="185" width="640" height="105" fill="#111" stroke="#1abc9c" rx="4"/>
+        <rect x="40" y="185" width="640" height="105" fill="#111111" stroke="#1abc9c" rx="4"/>
         <text x="360" y="210" text-anchor="middle" font-size="13" fill="#f1c40f" font-family="Consolas" font-weight="bold">COP_hp = Q1 / W = Q1 / (Q1 - Q2)   |   Rule of Thumb: COP ≈ 3.0</text>
         <text x="360" y="235" text-anchor="middle" font-size="10" fill="#ecf0f1">1 J electricity delivers ~3 J heat (versus Electric resistance heater COP = 1.0 strictly 1-for-1).</text>
         <text x="360" y="255" text-anchor="middle" font-size="10" fill="#2ecc71">Reversible Heat Pump: 4-way valve flips between cooling mode (summer) and heating mode (winter).</text>
@@ -600,8 +591,8 @@ const notesData = [
     sections: [
       {
         title: 'Heat Pump Cycle & COP / 熱泵循環與性能系數',
-        zh: '<p><strong>熱泵 (Heat pump)</strong> 輸入電功 $W$，從低溫源抽取熱量 $Q_2$，提升品位輸出高溫熱量 $Q_1$[cite: 13]：</p><div class="formula-block">COP_{hp} = \frac{Q_1}{W} = \frac{Q_1}{Q_1 - Q_2}</div><div class="key-point"><strong>性能系數 COP（Slide 39）：</strong><br>• <strong>經驗 COP 約為 3.0 ($COP_{hp} \approx 3$)</strong>：每用 1 J 電可產出約 3 J 熱量[cite: 13]；<br>• 電阻暖爐僅為 1:1 ($COP=1$)[cite: 13]；<br>• <strong>可逆轉熱泵</strong>：靠<strong>四通閥 (4-way valve)</strong> 實現冬暖夏涼切換[cite: 13]；<br>• <strong>串級系統</strong>：冰機冷凝器作熱泵熱源，輸出 <strong>48–82 °C</strong> 熱水[cite: 13]。</div>',
-        en: '<p>A <strong>heat pump</strong> upgrades low-grade heat $Q_2$ into high-grade heat $Q_1$ using work $W$[cite: 13]:</p><div class="formula-block">COP_{hp} = \frac{Q_1}{W} = \frac{Q_1}{Q_1 - Q_2}</div><div class="key-point"><strong>Rule of Thumb (Slide 39):</strong><br>• <strong>$COP_{hp} \approx 3.0$</strong> (delivers ~3 J heat per 1 J electricity, vs electric heater strictly 1-for-1)[cite: 13];<br>• Reversible heat pumps use a <strong>4-way valve</strong>[cite: 13];<br>• Cascade systems deliver hot water at <strong>48–82 °C</strong>[cite: 13].</div>'
+        zh: '<p><strong>熱泵 (Heat pump)</strong> 輸入電功 $W$，從低溫源抽取熱量 $Q_2$，提升品位輸出高溫熱量 $Q_1$：</p><div class="formula-block">COP_{hp} = \frac{Q_1}{W} = \frac{Q_1}{Q_1 - Q_2}</div><div class="key-point"><strong>性能系數 COP：</strong><br>• <strong>經驗 COP 約為 3.0 ($COP_{hp} \approx 3$)</strong>：每用 1 J 電可產出約 3 J 熱量；<br>• 電阻暖爐僅為 1:1 ($COP=1$)；<br>• <strong>可逆轉熱泵</strong>：靠<strong>四通閥 (4-way valve)</strong> 實現冬暖夏涼切換；<br>• <strong>串級系統</strong>：冰機冷凝器作熱泵熱源，輸出 <strong>48–82 °C</strong> 熱水。</div>',
+        en: '<p>A <strong>heat pump</strong> upgrades low-grade heat $Q_2$ into high-grade heat $Q_1$ using work $W$:</p><div class="formula-block">COP_{hp} = \frac{Q_1}{W} = \frac{Q_1}{Q_1 - Q_2}</div><div class="key-point"><strong>Rule of Thumb:</strong><br>• <strong>$COP_{hp} \approx 3.0$</strong> (delivers ~3 J heat per 1 J electricity, vs electric heater strictly 1-for-1);<br>• Reversible heat pumps use a <strong>4-way valve</strong>;<br>• Cascade systems deliver hot water at <strong>48–82 °C</strong>.</div>'
       }
     ]
   }
